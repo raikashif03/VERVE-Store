@@ -1,6 +1,11 @@
 import { Product, Order, SavedAddress, SavedPaymentMethod } from '../types';
+import heroBannerImg from '../assets/images/hero_lumen_flagship_1792727414810.jpg';
+import headphonesImg from '../assets/images/product_studio_headphones_1792727416273.jpg';
+import watchImg from '../assets/images/product_mechanical_watch_1792727416074.jpg';
+import kettleImg from '../assets/images/product_artisan_kettle_1792727415831.jpg';
+import backpackImg from '../assets/images/product_tech_backpack_1792727416582.jpg';
 
-export const HERO_BANNER_IMAGE = '/src/assets/images/hero_lumen_flagship_1792727414810.jpg';
+export const HERO_BANNER_IMAGE = heroBannerImg;
 
 export const INITIAL_PRODUCTS: Product[] = [
   {
@@ -16,10 +21,10 @@ export const INITIAL_PRODUCTS: Product[] = [
     stockCount: 18,
     isNew: true,
     freeShipping: true,
-    image: '/src/assets/images/product_studio_headphones_1792727416273.jpg',
+    image: headphonesImg,
     gallery: [
-      '/src/assets/images/product_studio_headphones_1792727416273.jpg',
-      '/src/assets/images/hero_lumen_flagship_1792727414810.jpg',
+      headphonesImg,
+      heroBannerImg,
     ],
     description: 'Acoustic engineering meets tactile precision. Custom 45mm beryllium drivers deliver reference-grade transparency, planar bass extension, and 42 hours of battery autonomy.',
     features: [
@@ -72,10 +77,10 @@ export const INITIAL_PRODUCTS: Product[] = [
     stockCount: 9,
     isNew: true,
     freeShipping: true,
-    image: '/src/assets/images/product_mechanical_watch_1792727416074.jpg',
+    image: watchImg,
     gallery: [
-      '/src/assets/images/product_mechanical_watch_1792727416074.jpg',
-      '/src/assets/images/hero_lumen_flagship_1792727414810.jpg',
+      watchImg,
+      heroBannerImg,
     ],
     description: 'Grade 5 aerospace titanium case with double-domed anti-reflective sapphire crystal. Powered by a Swiss caliber self-winding movement with 68 hours of reserve.',
     features: [
@@ -120,9 +125,9 @@ export const INITIAL_PRODUCTS: Product[] = [
     stockCount: 24,
     isNew: false,
     freeShipping: true,
-    image: '/src/assets/images/product_artisan_kettle_1792727415831.jpg',
+    image: kettleImg,
     gallery: [
-      '/src/assets/images/product_artisan_kettle_1792727415831.jpg',
+      kettleImg,
     ],
     description: 'PID digital microcontroller maintains brewing temperatures to within 0.5°C accuracy. Counterbalanced ergonomic handle and controlled flow-rate gooseneck spout.',
     features: [
@@ -166,9 +171,9 @@ export const INITIAL_PRODUCTS: Product[] = [
     stockCount: 15,
     isNew: true,
     freeShipping: true,
-    image: '/src/assets/images/product_tech_backpack_1792727416582.jpg',
+    image: backpackImg,
     gallery: [
-      '/src/assets/images/product_tech_backpack_1792727416582.jpg',
+      backpackImg,
     ],
     description: 'Engineered for seamless metropolitan commuting and international carry-on transit. Built from recycled 840D Cordura ballistic nylon with AquaGuard waterproof zippers.',
     features: [
@@ -211,9 +216,9 @@ export const INITIAL_PRODUCTS: Product[] = [
     stockCount: 32,
     isNew: false,
     freeShipping: true,
-    image: '/src/assets/images/product_studio_headphones_1792727416273.jpg',
+    image: headphonesImg,
     gallery: [
-      '/src/assets/images/product_studio_headphones_1792727416273.jpg',
+      headphonesImg,
     ],
     description: 'Compact true-wireless monitors featuring 11mm graphene dynamic drivers, active wind cancellation, and spatial audio with dynamic head tracking.',
     features: [
@@ -256,9 +261,9 @@ export const INITIAL_PRODUCTS: Product[] = [
     stockCount: 6,
     isNew: true,
     freeShipping: true,
-    image: '/src/assets/images/product_mechanical_watch_1792727416074.jpg',
+    image: watchImg,
     gallery: [
-      '/src/assets/images/product_mechanical_watch_1792727416074.jpg',
+      watchImg,
     ],
     description: 'Purpose-built dive instrument engineered to 300m water depth. 120-click ceramic bezel with Grade X1 Super-LumiNova indices and ISO 6425 certification.',
     features: [
@@ -302,9 +307,9 @@ export const INITIAL_PRODUCTS: Product[] = [
     stockCount: 40,
     isNew: false,
     freeShipping: false,
-    image: '/src/assets/images/product_artisan_kettle_1792727415831.jpg',
+    image: kettleImg,
     gallery: [
-      '/src/assets/images/product_artisan_kettle_1792727415831.jpg',
+      kettleImg,
     ],
     description: 'Double-walled hand-blown borosilicate glass server that maintains optimal extraction heat while remaining cool to the touch.',
     features: [
@@ -346,9 +351,9 @@ export const INITIAL_PRODUCTS: Product[] = [
     stockCount: 29,
     isNew: false,
     freeShipping: false,
-    image: '/src/assets/images/product_tech_backpack_1792727416582.jpg',
+    image: backpackImg,
     gallery: [
-      '/src/assets/images/product_tech_backpack_1792727416582.jpg',
+      backpackImg,
     ],
     description: 'Origami-style expandable tech organizer pouch with elastic loops for cables, chargers, power banks, and flash drives.',
     features: [

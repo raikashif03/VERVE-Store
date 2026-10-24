@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { 
-  X, 
-  Code, 
-  Image as ImageIcon, 
-  Download, 
-  Copy, 
-  Check, 
-  Upload, 
-  RotateCcw, 
-  FileCode, 
+import {
+  X,
+  Code,
+  Image as ImageIcon,
+  Download,
+  Copy,
+  Check,
+  Upload,
+  RotateCcw,
+  FileCode,
   Terminal,
   ExternalLink,
   Layers
@@ -135,7 +135,7 @@ export const INITIAL_PRODUCTS: Product[] = ${JSON.stringify(products, null, 2)};
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-slate-950/70 backdrop-blur-xs overflow-y-auto">
-      <div 
+      <div
         className="relative w-full max-w-5xl bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden my-auto max-h-[94vh] flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
@@ -164,11 +164,10 @@ export const INITIAL_PRODUCTS: Product[] = ${JSON.stringify(products, null, 2)};
         <div className="px-7 border-b border-slate-200 flex items-center gap-3 overflow-x-auto text-sm font-bold bg-white">
           <button
             onClick={() => setActiveTab('images')}
-            className={`py-3 px-3.5 border-b-2 flex items-center gap-1.5 transition-colors whitespace-nowrap ${
-              activeTab === 'images'
+            className={`py-3 px-3.5 border-b-2 flex items-center gap-1.5 transition-colors whitespace-nowrap ${activeTab === 'images'
                 ? 'border-slate-950 text-slate-950 font-bold'
                 : 'border-transparent text-slate-500 hover:text-slate-900'
-            }`}
+              }`}
           >
             <ImageIcon className="w-4 h-4" />
             <span>Select & Upload Images</span>
@@ -176,11 +175,10 @@ export const INITIAL_PRODUCTS: Product[] = ${JSON.stringify(products, null, 2)};
 
           <button
             onClick={() => setActiveTab('code')}
-            className={`py-3 px-3.5 border-b-2 flex items-center gap-1.5 transition-colors whitespace-nowrap ${
-              activeTab === 'code'
+            className={`py-3 px-3.5 border-b-2 flex items-center gap-1.5 transition-colors whitespace-nowrap ${activeTab === 'code'
                 ? 'border-slate-950 text-slate-950 font-bold'
                 : 'border-transparent text-slate-500 hover:text-slate-900'
-            }`}
+              }`}
           >
             <Code className="w-4 h-4" />
             <span>Export `mockData.ts`</span>
@@ -188,11 +186,10 @@ export const INITIAL_PRODUCTS: Product[] = ${JSON.stringify(products, null, 2)};
 
           <button
             onClick={() => setActiveTab('json')}
-            className={`py-3 px-3.5 border-b-2 flex items-center gap-1.5 transition-colors whitespace-nowrap ${
-              activeTab === 'json'
+            className={`py-3 px-3.5 border-b-2 flex items-center gap-1.5 transition-colors whitespace-nowrap ${activeTab === 'json'
                 ? 'border-slate-950 text-slate-950 font-bold'
                 : 'border-transparent text-slate-500 hover:text-slate-900'
-            }`}
+              }`}
           >
             <FileCode className="w-4 h-4" />
             <span>Export Catalog JSON</span>
@@ -200,11 +197,10 @@ export const INITIAL_PRODUCTS: Product[] = ${JSON.stringify(products, null, 2)};
 
           <button
             onClick={() => setActiveTab('github')}
-            className={`py-3 px-3.5 border-b-2 flex items-center gap-1.5 transition-colors whitespace-nowrap ${
-              activeTab === 'github'
+            className={`py-3 px-3.5 border-b-2 flex items-center gap-1.5 transition-colors whitespace-nowrap ${activeTab === 'github'
                 ? 'border-slate-950 text-slate-950 font-bold'
                 : 'border-transparent text-slate-500 hover:text-slate-900'
-            }`}
+              }`}
           >
             <Terminal className="w-4 h-4" />
             <span>Push to GitHub Guide</span>
@@ -276,11 +272,10 @@ export const INITIAL_PRODUCTS: Product[] = ${JSON.stringify(products, null, 2)};
                           setSelectedProductId(p.id);
                           setCustomUrlInput('');
                         }}
-                        className={`w-full p-2.5 rounded-lg border text-left flex items-center gap-3 transition-colors ${
-                          selectedProductId === p.id
+                        className={`w-full p-2.5 rounded-lg border text-left flex items-center gap-3 transition-colors ${selectedProductId === p.id
                             ? 'border-slate-950 bg-slate-900 text-white shadow-xs'
                             : 'border-slate-200 bg-white hover:bg-slate-50 text-slate-800'
-                        }`}
+                          }`}
                       >
                         <img
                           src={p.image}
@@ -318,7 +313,7 @@ export const INITIAL_PRODUCTS: Product[] = ${JSON.stringify(products, null, 2)};
                     </div>
                     <div className="space-y-2 flex-1">
                       <div className="font-semibold text-slate-900">Choose New Image Source:</div>
-                      
+
                       {/* Local File Upload Button */}
                       <label className="cursor-pointer inline-flex items-center gap-1.5 px-3 py-1.5 bg-slate-950 text-white rounded text-xs font-semibold hover:bg-slate-800 transition-colors shadow-xs">
                         <Upload className="w-3.5 h-3.5" />
@@ -370,9 +365,8 @@ export const INITIAL_PRODUCTS: Product[] = ${JSON.stringify(products, null, 2)};
                         <button
                           key={idx}
                           onClick={() => onUpdateProductImage(currentSelectedProduct.id, preset.url)}
-                          className={`p-1.5 rounded border text-left bg-white hover:border-slate-400 transition-all flex flex-col gap-1 ${
-                            currentSelectedProduct.image === preset.url ? 'border-slate-950 ring-1 ring-slate-950' : 'border-slate-200'
-                          }`}
+                          className={`p-1.5 rounded border text-left bg-white hover:border-slate-400 transition-all flex flex-col gap-1 ${currentSelectedProduct.image === preset.url ? 'border-slate-950 ring-1 ring-slate-950' : 'border-slate-200'
+                            }`}
                         >
                           <div className="w-full h-14 bg-slate-100 rounded overflow-hidden">
                             <img src={preset.url} alt={preset.name} className="w-full h-full object-cover" />
