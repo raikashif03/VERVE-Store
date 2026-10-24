@@ -1,0 +1,6 @@
+{
+  "name": "VERVE Storefront — Premier Marketplace & Order Experience",
+  "description": "Production-grade e-commerce storefront featuring responsive product catalog, smart faceted filters, real-time courier tracking, multi-channel checkout, and sleek customer dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
